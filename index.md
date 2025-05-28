@@ -466,3 +466,17 @@ to include the relevant installation instrucctions.
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
 
+<p>
+  After completing the software setup instructions, please run the following line of code in the terminal (copy and paste):
+
+  - Linux/MacOS:
+  ```
+  python -c "import importlib.util; print('Success :)' if all(importlib.util.find_spec(mod) for mod in ['matplotlib', 'jupyter', 'seaborn', 'sklearn', 'pandas']) else 'Fail :(')"
+  ```
+  - Windows:
+  ```
+  py -c "import importlib.util; print('Success :)' if all(importlib.util.find_spec(mod) for mod in ['matplotlib', 'jupyter', 'seaborn', 'sklearn', 'pandas']) else 'Fail :(')"
+  ```
+
+  Please send a screenshot of the result to training@esciencecenter.nl. If you have any problems or questions about the setup, please also send us an email to training@esciencecenter.nl.
+</p>
